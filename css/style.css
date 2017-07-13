@@ -1,0 +1,253 @@
+pre {
+    border : none;
+    margin : 0px 0px 0px 0px;
+    padding : 0px 0px 0px 0px;
+}
+
+.dropdown {
+        width : 150px;
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu li a{
+    width : 200px;
+}
+
+.dropdown-submenu li{
+    position: relative;
+    /*display : none;*/
+}
+
+.dropdown-menu .dropdown-submenu{
+    position : relative;
+    top: 0;
+    left: 100%;
+    margin-top: -50px;
+    background-color : white;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    background-clip: padding-box;
+}
+
+.dropdown-menu li {
+    height : 40px;
+}
+
+.dropdown-submenu.close {
+    display : none;
+}
+
+/* don't display the right menu in iribbon */
+div.widget-container {
+    display : none;
+}
+
+.bootstrap-select {
+        text-align : left;
+        max-width : 150px;
+}
+
+p.spacing-vert {
+        min-height : 50px;
+        display : inline-block;
+}
+
+.label_fields {
+    width : 100px;
+    font-weight : bold;
+}
+
+.label_values, .input_values {
+    white-space : auto;
+    min-height : 35px;
+}  
+
+.glyphicon-asterisk.required {
+    width : 200px;
+    color : red;
+}
+
+.glyphicon-level-up.level-two {
+    color : blue;
+}
+
+.nav-collapse.collapse.in {
+    overflow : auto;
+    height : auto;
+}
+
+#content, div.ribbon-top {
+    width : 100%;
+}
+
+article.page {
+    width : 90%;
+    margin : 5px 5px auto;
+}
+    
+#err_msg {
+    color : red;
+    font-size : large;
+}    
+
+#succ_msg {
+    color : blue;
+    font-size : large;
+}
+
+.no-display {
+    display : none !important; 
+}
+
+.default {
+    background-color : yellow;
+}
+
+.uom-levels {
+    text-align : center;
+}
+
+div.box {
+    border : 1px solid blue;
+}
+
+.qty_input {
+    width : 50px;
+}
+
+.right {
+    float : right;
+}
+
+.new_record {
+    background-color : blue;
+    color : white;
+    margin-left : 20px;
+}
+
+.highlight_value {
+    color : blue;
+    font-weight : bold;
+    font-size : large;
+}
+
+.smallest_uom_qty {
+    background-color : blue;
+    font-size : large;
+    color : white;
+}
+
+th {
+    background-color : green;    
+}
+
+.header-highlight {
+    width : 100%;
+    background-color : green;
+    font-weight : bold;
+    font-size : large;
+}
+
+td {
+    vertical-align : top;
+}
+
+#credit, #slider_lite, #widget_boxes_container {
+    display : none;
+}
+
+#report {
+    overflow : auto;
+}
+
+@media only screen and(min-width: 1200px) {
+    .row-fluid .span9 {
+        width: 100%; 
+    }
+}
+  
+@media only screen and (max-width: 768px) {
+    .daterange {
+        width : 150px;
+    }
+    
+    input[type="search"] {
+        max-width : 100px;
+    }
+    
+    .btn.btn-default.buttons-print, .btn.btn-default.buttons-copy {
+        display : none;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .daterange {
+        width : 300px;
+    }
+    
+    /* disable mobile header if mobile */
+    .mobile-header {
+        display : none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* enable mobile header if mobile */
+    .mobile-header {
+        display : block;
+        font-weight : bold;
+    }
+    
+    /* Force table to not be like tables anymore */
+	[id^=no-more-tables] table, 
+	[id^=no-more-tables] thead, 
+	[id^=no-more-tables] tbody, 
+	[id^=no-more-tables] th, 
+	[id^=no-more-tables] td, 
+	[id^=no-more-tables] tr { 
+		display: block; 
+	}
+ 
+	/* Hide table headers (but not display: none;, for accessibility) */
+	[id^=no-more-tables] thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+ 
+	[id^=no-more-tables] tr { border: 1px solid #ccc; }
+    
+ 
+	[id^=no-more-tables] td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+		white-space: normal;
+		text-align:left;
+	}
+    
+ 
+	[id^=no-more-tables] td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		text-align:left;
+		font-weight: bold;
+	}
+ 
+	/*
+	Label the data
+	*/
+	[id^=no-more-tables] td:before { content: attr(data-title); }
+}
